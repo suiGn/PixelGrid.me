@@ -36,7 +36,6 @@
             const btn2D = document.getElementById('btn-2d');
             const btn3D = document.getElementById('btn-3d');
 
-            // Listando las propiedades de grid
             propertiesDiv.innerHTML = `
                 width: ${grid.width} <br>
                 height: ${grid.height} <br>
@@ -46,7 +45,6 @@
                 imageData: ${grid.imageData}
             `;
 
-            // Eventos de botones para mostrar los datos en 2D y 3D
             btn2D.addEventListener('click', () => {
                 gridDataPre.textContent = JSON.stringify(grid.imageData.data);
             });
@@ -65,14 +63,23 @@
             video.onplaying = function() {
                 grid.width = video.videoWidth;
                 grid.height = video.videoHeight;
-                draw();
+                drawVideoToCanvas();
             }
 
-            function draw() {
+            function drawVideoToCanvas() {
                 grid.ctx.clearRect(0, 0, grid.width, grid.height);
                 grid.ctx.drawImage(video, 0, 0, grid.width, grid.height);
-                requestAnimationFrame(draw);
+                grid.updateImageData();
+                requestAnimationFrame(drawVideoToCanvas);
             }
+
+            grid.canvas.addEventListener('mousemove', function(event) {
+                const rect = grid.canvas.getBoundingClientRect();
+                const x = event.clientX - rect.left;
+                const y = event.clientY - rect.top;
+                const [r, g, b, a] = grid.getPixel(x, y);
+                console.log(r, g, b, a);
+            });
         }
     </script>
 </body>

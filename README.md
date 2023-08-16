@@ -1,124 +1,103 @@
-<img src="/Users/suign/Desktop/@me/@src/git/@npm/this.pixelgrid/_._.svg" alt="SVG Image" width="123" height="123" style="width123px; height:123px;">
+<img src="/Users/suign/Desktop/@me/@src/git/@npm/this.pixelgrid/_._.svg" alt="SVG Image" width="123" height="123">
 
-# this.pixelgrid
+# PixelGrid
+
+PixelGrid is a versatile web tool offering insights into any content rendered on the HTML canvas. Through its custom-built `pixel-grid` HTML element, users can observe and extract individual pixel data, including RGB values.
+
+## **Key Features:**
+
+- **Canvas Compatibility**: Supports all types of content, from videos to sketches.
+- **Pixel Insights**: Real-time monitoring and extraction of RGB values.
+- **Data Conversion**: Transition between 2D arrays and 3D matrices.
+- **Extensible**: Integration-ready for larger web projects or standalone use.
+
+Overall, this class provides the core functionalities needed for a grid of pixels, with methods to access, modify, and visualize pixel data.
+
+## Installation
 
 ```bash
 npm i this.pixelgrid
 ```
 
-#### Under Development.
+### Introduction
 
-**Introduction to `this.pixelgrid` in the context of Standardized Data Structuring**
+PixelGrid provides an interface for HTML5 canvas pixel manipulation. It can function as a standalone module in a Node.js environment, as a web component in HTML files, or in a headless environment.
 
-# PixelGrid
+Responsibility: Display pixels and provide basic interactions with them.
+It's a visual component that could be utilized by other modules or functionalities.
+this.pixel module:
 
- PixelGrid is a versatile library that provides a convenient way to create and manipulate pixel grids using an HTML5 canvas. It can be used as a standalone module in a Node.js environment, as a web component in HTML files, or in a headless environment.
+Responsibility: High-level operations on pixels, source management (like webcam feed), processing, transformations, and other functionalities.
+Utilizes the PixelGrid for visual representation and feedback but is not limited by it.
 
-**PixelGrid.js** - A Standalone Web Component This npm package provides the PixelGrid class, which serves as a standalone web component. It offers an abstraction over a standard HTML5 Canvas, enabling low-level manipulation of image data. The PixelGrid class represents a 2D array of pixels, and each pixel can be accessed and modified individually. As an HTMLElement extension, it can be used directly in HTML as a custom web component.
+#### **How to use:**
 
-### Features
+- Direct Web Component:
 
-- Create a pixel grid of specified width and height.
-- Set and retrieve RGBA values of individual pixels in the grid.
-- Render the pixel grid on an HTML5 canvas element.
+  ```html
+  <script src="./PixelGrid.js" defer></script>
+  <pixel-grid id="pg" width="640" height="480"></pixel-grid>
+  ```
 
-Installation You can install PixelGrid.js via npm:
+- With `this.pixel` for extended functionality:
 
-```bash
-npm install this.pixelgrid
-```
+  ```javascript
+  npm install this.pixel
+  const PixelGrid = require('this.pixel');
+  ```
 
-## Using this.pixels 
+Use the attribute in your HTML:
+If you want the canvas to be optimized for frequent reads:
+<pixel-grid will-read-frequently="true"></pixel-grid>
+If you don't want to optimize for frequent reads:
+<pixel-grid></pixel-grid>
+Or:
+<pixel-grid will-read-frequently="false"></pixel-grid>
 
-### Conceptual Flow:
+## Standardizing Web Elements for Machine Learning
 
-- [ ] Set up your context with [this.me.](https://www.npmjs.com/package/this.me)
+The **this.** modules aim to transform traditional web elements into standardized formats ready for machine learning.
 
-- [ ] Create a neural network using [neurons.me](https://www.neurons.me).
+### Principles Behind the this. Library:
 
-- [ ] Define the data you'd like your neural network to recognize or process with [this.](https://www.neurons.me/this) modules.
+- **Abstraction for ML**: Structure web content for machine learning.
+- **Web Standards**: Relies on familiar public web standards.
+- **Open and Collaborative**: Leveraging public standards for community collaboration.
 
-- [ ] Use [this.be](https://www.npmjs.com/package/this.be) to maintain a state or context, - watching over the [PixelGrid](https://www.npmjs.com/package/this.pixel) and any other states you define for example.
+[More about neurons.me](https://www.neurons.me/)
 
-- [ ] Define desired status and handlers, [be.this](https://www.npmjs.com/package/be.this).
+## THIS Sandbox DEMO Playground
 
-- [ ] Keep [i.mlearning](https://www.npmjs.com/package/i.mlearning).
+Explore the combined power of THIS.ME and NEURONS.ME.
 
-  
+### Getting Started:
 
-This npm package, this.pixels, provides higher-level functionality for managing pixels, mainly designed for machine learning and neural network tools. It includes the PixelGrid.js file from the this.pixelgrid package as part of its functionality.
+1. **Clone the Repository**:
 
-To use PixelGrid along with this.pixels:
+   ```bash
+   git clone https://github.com/suiGn/.me.git
+   ```
 
-1. First, install the this.pixels package in your project:
+2. **Navigate**:
 
-```js
-npm install this.pixel
-```
+   ```bash
+   cd .me
+   ```
 
-In your project's index.js or any other file where you want to use PixelGrid, import it like this:
+3. **Install Dependencies**:
 
-```js
-const PixelGrid = require('this.pixel');
-```
+   ```bash
+   yarn install  # or npm install
+   ```
 
-With this setup, you can now create an instance of PixelGrid and utilize its functionality within your project.
+4. **Launch**:
 
-Now, you can create an instance of `PixelGrid` and use it as needed:
+   ```bash
+   npx electron index.js
+   ```
 
-```js
-const pixelGrid = new PixelGrid(800, 600); // Create a new instance with width 800 and height 600
-// Get the color of a specific pixel at coordinates (x, y)
-const pixelColor = pixelGrid.getPixel(x, y);
-// Set the color of a specific pixel at coordinates (x, y)
-pixelGrid.setPixel(x, y, [255, 0, 0, 255]); // Set the pixel to red
-// Access all the pixels in the pixel grid
-const allPixels = pixelGrid.pixels;
-```
+## License & Policies
 
-The `PixelGrid` class will now be available for you to use in your project, thanks to the `this.pixel` package. It provides an abstraction over the canvas element and allows you to perform low-level manipulation of image data using its methods.
-
-  ### Usage:
-
-  - **Standalone Usage:** Developers can install the `this.pixelgrid` npm package independently (`npm i this.pixelgrid`). This allows them to use the `PixelGrid` class as a web component directly in their projects to work with image data using an abstraction over the HTML5 Canvas. They can perform low-level manipulation of image data by accessing and modifying individual pixels using the methods provided by the `PixelGrid` class.
-  - **Usage with `this.pixel`:** Developers who need higher-level functionality related to managing pixels, such as machine learning and neural network tools, can install the `this.pixel` npm package (`npm i this.pixel`). This package includes the `PixelGrid.js` file from the `this.pixelgrid` package as part of its functionality. Developers can then use `this.pixel` to access the `PixelGrid` class and create instances of it to work with image data as a web component. Additionally, they can extend `this.pixel` with more functions and features while keeping the `PixelGrid` class as a stand-alone web component, abstracting over the HTML5 Canvas.
-
-   ### Web Component (HTML) 
-
-Include the PixelGrid web component in your HTML file using the `<pixel-grid>` tag:  
-
-This is just a simple example of how you can use the this.pixelgrid web component. You can further customize the appearance and behavior of the pixel grid by adding your own styles and JavaScript code.
-
-**Note:** The above code is for demonstration purposes only and may not work directly in your environment. Please adjust the paths to the PixelGrid.js file accordingly.
-
-**this.pixelgrid** is created by suiGn.
-
-https://github.com/suiGn/Pixels
-
-
-
-# Context of Abstraction for Machine Learning Standardization
-
-Traditional web development elements, from images to audio, are designed mainly for display and interaction. But what if they could be seamlessly converted into standardized formats primed for machine learning? That's the vision behind the **this.** modules.
-
-An Introduction to the this. JavaScript Library: Standardizing Web Development Elements for Machine Learning.
-
-## Principles Behind the this. Library:
-
-- ### **Abstraction for ML:**
-
- The library's core principle is to abstract traditional web elements so that they're immediately primed for machine learning. It's about viewing web content not just as data but as structured, consistent, and standardized data.
-
-- ### **Built on Web Standards:** 
-
-Rooted in JavaScript, the this. library builds upon public web development standards. The aim is to ensure that developers remain within familiar territories, even as they venture into the world of machine learning.
-
-- ### **Open and Collaborative:** 
-
-The this. library champions open standards. By leveraging public web standards, it invites collaboration, hoping to create a community that continually refines and enhances the bridge between web development and machine learning.
-
-
-
-[neurons.me](https://www.neurons.me)
-
-[neurons.me/this](https://www.neurons.me/this)
+- **License**: MIT License (see LICENSE for details).
+- **Privacy Policy**: Respects user privacy; no collection/storage of personal data.
+- **Terms of Usage**: Use responsibly. No guarantees/warranties provided. [Terms](https://www.neurons.me/terms-of-use) | [Privacy](https://www.neurons.me/privacy-policy)
