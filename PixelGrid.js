@@ -32,15 +32,17 @@ class PixelGrid extends HTMLElement {
         this.ctx.putImageData(this.imageData, 0, 0);
         this.drawGridOverlay();
     }
+    redraw() {
+        this.ctx.putImageData(this.imageData, 0, 0);
+        this.drawGridOverlay();
+    }
     resize(newWidth, newHeight) {
         this.width = newWidth;
         this.height = newHeight;
-        
         this.canvas.width = this.width;
         this.canvas.height = this.height;
-        
-        // You might need to re-initialize or redraw your grid here
-        this.initialize();
+        this.imageData = this.ctx.createImageData(this.width, this.height); // Update the imageData dimensions
+        this.redraw();
     }
     setData(data) {
         this.imageData.data.set(data);

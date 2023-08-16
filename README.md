@@ -30,6 +30,10 @@ this.pixel module:
 Responsibility: High-level operations on pixels, source management (like webcam feed), processing, transformations, and other functionalities.
 Utilizes the PixelGrid for visual representation and feedback but is not limited by it.
 
+PixelGrid defaults to if no width and heights specified.
+this.width = this.getAttribute('width') || 300;
+this.height = this.getAttribute('height') || 150;
+
 #### **How to use:**
 
 - Direct Web Component:
