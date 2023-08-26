@@ -23,16 +23,17 @@ npm i this.pixelgrid
 
 PixelGrid provides an interface for HTML5 canvas pixel manipulation. It can function as a standalone module in a Node.js environment, as a web component in HTML files, or in a headless environment.
 
-Responsibility: Display pixels and provide basic interactions with them.
+**Responsibility:** Display pixels and provide basic interactions with them.
 It's a visual component that could be utilized by other modules or functionalities.
-this.pixel module:
-
-Responsibility: High-level operations on pixels, source management (like webcam feed), processing, transformations, and other functionalities.
+High-level operations on pixels, source management (like webcam feed), processing, transformations, and other functionalities.
 Utilizes the PixelGrid for visual representation and feedback but is not limited by it.
 
 PixelGrid defaults to if no width and heights specified.
+
+```js
 this.width = this.getAttribute('width') || 300;
 this.height = this.getAttribute('height') || 150;
+```
 
 #### **How to use:**
 
@@ -52,11 +53,24 @@ this.height = this.getAttribute('height') || 150;
 
 Use the attribute in your HTML:
 If you want the canvas to be optimized for frequent reads:
+
+```html
 <pixel-grid will-read-frequently="true"></pixel-grid>
+```
+
 If you don't want to optimize for frequent reads:
+
+```html
 <pixel-grid></pixel-grid>
+```
+
 Or:
+
+```html
 <pixel-grid will-read-frequently="false"></pixel-grid>
+```
+
+
 
 ## Standardizing Web Elements for Machine Learning
 
