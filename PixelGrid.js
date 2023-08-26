@@ -2,8 +2,8 @@
 class PixelGrid extends HTMLElement {
     constructor() {
         super();
-        this.width = this.getAttribute('width') || 300;
-        this.height = this.getAttribute('height') || 150;
+        this.width = this.getAttribute('width') || 777;
+        this.height = this.getAttribute('height') || 333;
         this.pixelSize = this.getAttribute('pixel-size') || 1;
         // Initialize the canvas element
         this.canvas = document.createElement('canvas');
