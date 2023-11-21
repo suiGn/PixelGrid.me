@@ -13,10 +13,11 @@
     "canvas",
     "pixel grid"
     ],
-    "author": "suiGn",
-    "license": "MIT",
     "repository": {
     "type": "git",
     "url": "https://github.com/suiGn/PixelGrid"
-    }
+    },
+    "author": "suiGn",
+    "license": "MIT",
+    "repoType": "NPM Package"
     }
