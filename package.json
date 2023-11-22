@@ -17,6 +17,8 @@
     "type": "git",
     "url": "https://github.com/suiGn/PixelGrid"
     },
+    "homepage": "https://www.npmjs.com/package/this.pixelgrid",
+    "docs": "https://suiGn.github.io/PixelGrid",
     "author": "suiGn",
     "license": "MIT",
     "repoType": "NPM Package"
