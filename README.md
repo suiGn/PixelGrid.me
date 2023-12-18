@@ -1,4 +1,4 @@
-<img src="/Users/suign/Desktop/@me/@src/git/@npm/this.pixelgrid/_._.svg" alt="SVG Image" width="123" height="123">
+<img src="https://github.com/suiGn/PixelGrid/blob/main/pixelgrid.png" alt="SVG Image" width="123" height="123">
 
 # PixelGrid
 
