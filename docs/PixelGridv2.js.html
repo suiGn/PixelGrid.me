@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +7,7 @@
   -
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Docs for PixelGrid Home</title>
+  <title>Docs for PixelGrid PixelGridv2.js</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -118,125 +120,126 @@
         <div class="core" id="main-content-wrapper">
             <div class="content">
                 <header class="page-title">
-                    <p></p>
-                    <h1>Home</h1>
+                    <p>Source</p>
+                    <h1>PixelGridv2.js</h1>
                 </header>
                 
 
 
 
     
-
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
     <section>
-        <article><img src="https://suign.github.io/PixelGrid/8-bit_pixel_art_icon_for_a_web_application_named_pixelgrid.me._The_icon_a_cube_representing_an_RGB_image_that_is_pixel.png" alt="SVG Image" width="203">
-<h1>PixelGrid</h1>
-<p>PixelGrid is a versatile web tool offering insights into any content rendered on the HTML canvas. Through its custom-built <code>pixel-grid</code> HTML element, users can observe and extract individual pixel data, including RGB values.</p>
-<h2><strong>Key Features:</strong></h2>
-<ul>
-<li><strong>Canvas Compatibility</strong>: Supports all types of content, from videos to sketches.</li>
-<li><strong>Pixel Insights</strong>: Real-time monitoring and extraction of RGB values.</li>
-<li><strong>Data Conversion</strong>: Transition between 2D arrays and 3D matrices.</li>
-<li><strong>Extensible</strong>: Integration-ready for larger web projects or standalone use.</li>
-</ul>
-<p>Overall, this class provides the core functionalities needed for a grid of pixels, with methods to access, modify, and visualize pixel data.</p>
-<h2>Installation</h2>
-<pre class="prettyprint source lang-bash"><code>npm i this.pixelgrid
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * PixelGrid is a web component that allows for vectorized manipulation of pixels on a canvas.
+ * @extends HTMLElement
+ */
+class PixelGrid extends HTMLElement {
+    /**
+     * Creates an instance of PixelGrid.
+     */
+    constructor() {
+        super();
+        this.width = this.getAttribute('width') || 777;
+        this.height = this.getAttribute('height') || 333;
+        this.pixelSize = this.getAttribute('pixel-size') || 1;
+        this.canvas = document.createElement('canvas');
+        this.canvas.width = this.width;
+        this.canvas.height = this.height;
+        const willReadFrequently = this.getAttribute('will-read-frequently') === "true";
+        this.ctx = this.canvas.getContext('2d', { willReadFrequently: willReadFrequently });
+        this.imageData = this.ctx.createImageData(this.width, this.height);
+
+        this.appendChild(this.canvas);
+    }
+
+    /**
+     * Lifecycle callback that is invoked when the custom element is added to the DOM.
+     */
+    connectedCallback() {
+        this.initialize();
+        this.canvas.addEventListener('mousemove', (e) => this.showPixelInfo(e));
+    }
+
+    /**
+     * Initializes the canvas with a default image and draws a grid overlay.
+     */
+    initialize() {
+        // ... existing code ...
+    }
+
+    /**
+     * Redraws the canvas and grid overlay.
+     */
+    redraw() {
+        // ... existing code ...
+    }
+
+    /**
+     * Resizes the canvas and image data to new dimensions.
+     * @param {number} newWidth - The new width of the canvas.
+     * @param {number} newHeight - The new height of the canvas.
+     */
+    resize(newWidth, newHeight) {
+        // ... existing code ...
+    }
+
+    /**
+     * Sets the image data from an array.
+     * @param {Uint8ClampedArray} data - The image data array to set.
+     */
+    setData(data) {
+        // ... existing code ...
+    }
+
+    /**
+     * Draws a grid overlay for better visualization of pixels.
+     */
+    drawGridOverlay() {
+        // ... existing code ...
+    }
+
+    /**
+     * Shows information about the pixel under the mouse cursor.
+     * @param {MouseEvent} e - The mouse event object.
+     */
+    showPixelInfo(e) {
+        // ... existing code ...
+    }
+
+    /**
+     * Retrieves the RGBA values of a pixel at a specific position.
+     * @param {number} x - The x-coordinate of the pixel.
+     * @param {number} y - The y-coordinate of the pixel.
+     * @returns {number[]} An array containing the RGBA values.
+     */
+    getPixel(x, y) {
+        // ... existing code ...
+    }
+
+    /**
+     * Sets the RGBA values of a pixel at a specific position.
+     * @param {number} x - The x-coordinate of the pixel.
+     * @param {number} y - The y-coordinate of the pixel.
+     * @param {number[]} rgba - An array containing the RGBA values to set.
+     */
+    setPixel(x, y, rgba) {
+        // ... existing code ...
+    }
+
+    /**
+     * Updates the image data from the canvas.
+     */
+    updateImageData() {
+        // ... existing code ...
+    }
+}
+
+// Export the PixelGrid class as a module
+export default PixelGrid;
 </code></pre>
-<h3>Introduction</h3>
-<p>PixelGrid provides an interface for HTML5 canvas pixel manipulation. It can function as a standalone module in a Node.js environment, as a web component in HTML files, or in a headless environment.</p>
-<p><strong>Responsibility:</strong> Display pixels and provide basic interactions with them.
-It's a visual component that could be utilized by other modules or functionalities.
-High-level operations on pixels, source management (like webcam feed), processing, transformations, and other functionalities.
-Utilizes the PixelGrid for visual representation and feedback but is not limited by it.</p>
-<p>PixelGrid defaults to if no width and heights specified.</p>
-<pre class="prettyprint source lang-js"><code>this.width = this.getAttribute('width') || 300;
-this.height = this.getAttribute('height') || 150;
-</code></pre>
-<h4><strong>How to use:</strong></h4>
-<ul>
-<li>
-<p>Direct Web Component:</p>
-<pre class="prettyprint source lang-html"><code>&lt;script src=&quot;./PixelGrid.js&quot; defer>&lt;/script>
-&lt;pixel-grid id=&quot;pg&quot; width=&quot;640&quot; height=&quot;480&quot;>&lt;/pixel-grid>
-</code></pre>
-</li>
-<li>
-<p>With <code>this.pixel</code> for extended functionality:</p>
-<pre class="prettyprint source lang-javascript"><code>npm install this.pixel
-const PixelGrid = require('this.pixel');
-</code></pre>
-</li>
-</ul>
-<p>Use the attribute in your HTML:
-If you want the canvas to be optimized for frequent reads:</p>
-<pre class="prettyprint source lang-html"><code>&lt;pixel-grid will-read-frequently=&quot;true&quot;>&lt;/pixel-grid>
-</code></pre>
-<p>If you don't want to optimize for frequent reads:</p>
-<pre class="prettyprint source lang-html"><code>&lt;pixel-grid>&lt;/pixel-grid>
-</code></pre>
-<p>Or:</p>
-<pre class="prettyprint source lang-html"><code>&lt;pixel-grid will-read-frequently=&quot;false&quot;>&lt;/pixel-grid>
-</code></pre>
-<h2>Standardizing Web Elements for Machine Learning</h2>
-<p>The <strong>this.</strong> modules aim to transform traditional web elements into standardized formats ready for machine learning.</p>
-<h3>Principles Behind the this. Library:</h3>
-<ul>
-<li><strong>Abstraction for ML</strong>: Structure web content for machine learning.</li>
-<li><strong>Web Standards</strong>: Relies on familiar public web standards.</li>
-<li><strong>Open and Collaborative</strong>: Leveraging public standards for community collaboration.</li>
-</ul>
-<p><a href="https://www.neurons.me/">More about neurons.me</a></p>
-<h2>THIS Sandbox DEMO Playground</h2>
-<p>Explore the combined power of THIS.ME and NEURONS.ME.</p>
-<h3>Getting Started:</h3>
-<ol>
-<li>
-<p><strong>Clone the Repository</strong>:</p>
-<pre class="prettyprint source lang-bash"><code>git clone https://github.com/suiGn/.me.git
-</code></pre>
-</li>
-<li>
-<p><strong>Navigate</strong>:</p>
-<pre class="prettyprint source lang-bash"><code>cd .me
-</code></pre>
-</li>
-<li>
-<p><strong>Install Dependencies</strong>:</p>
-<pre class="prettyprint source lang-bash"><code>yarn install  # or npm install
-</code></pre>
-</li>
-<li>
-<p><strong>Launch</strong>:</p>
-<pre class="prettyprint source lang-bash"><code>npx electron index.js
-</code></pre>
-</li>
-</ol>
-<h2>License &amp; Policies</h2>
-<ul>
-<li><strong>License</strong>: MIT License (see LICENSE for details).</li>
-<li><strong>Privacy Policy</strong>: Respects user privacy; no collection/storage of personal data.</li>
-<li><strong>Terms of Usage</strong>: Use responsibly. No guarantees/warranties provided. <a href="https://www.neurons.me/terms-of-use">Terms</a> | <a href="https://www.neurons.me/privacy-policy">Privacy</a></li>
-</ul></article>
+        </article>
     </section>
-
-
 
 
 

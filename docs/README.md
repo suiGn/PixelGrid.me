@@ -1,7 +1,6 @@
-<img src="https://suign.github.io/PixelGrid/pixelgrid.png" alt="SVG Image">
+<img src="https://suign.github.io/PixelGrid/8-bit_pixel_art_icon_for_a_web_application_named_pixelgrid.me._The_icon_a_cube_representing_an_RGB_image_that_is_pixel.png" alt="SVG Image" width="203">
 
 # PixelGrid
-
 PixelGrid is a versatile web tool offering insights into any content rendered on the HTML canvas. Through its custom-built `pixel-grid` HTML element, users can observe and extract individual pixel data, including RGB values.
 
 ## **Key Features:**
@@ -14,7 +13,6 @@ PixelGrid is a versatile web tool offering insights into any content rendered on
 Overall, this class provides the core functionalities needed for a grid of pixels, with methods to access, modify, and visualize pixel data.
 
 ## Installation
-
 ```bash
 npm i this.pixelgrid
 ```
@@ -36,7 +34,6 @@ this.height = this.getAttribute('height') || 150;
 ```
 
 #### **How to use:**
-
 - Direct Web Component:
 
   ```html
