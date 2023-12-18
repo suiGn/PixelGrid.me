@@ -1,7 +1,6 @@
-<img src="https://github.com/suiGn/PixelGrid/blob/main/pixelgrid.png" alt="SVG Image" width="123" height="123">
+<img src="https://suign.github.io/PixelGrid/8-bit_pixel_art_icon_for_a_web_application_named_pixelgrid.me._The_icon_a_cube_representing_an_RGB_image_that_is_pixel.png" alt="SVG Image">
 
 # PixelGrid
-
 PixelGrid is a versatile web tool offering insights into any content rendered on the HTML canvas. Through its custom-built `pixel-grid` HTML element, users can observe and extract individual pixel data, including RGB values.
 
 ## **Key Features:**
