@@ -23,16 +23,28 @@
         "css": "style.css",
         "trackingCode": "-",
   "hideGenerator": false,
-        "navLinks": [
-            {
-                "label": "Github",
-                "href": "https://github.com/suiGn/PixelGrid"
-            },
-            {
-                "label": "App",
-                "href": "https://pixelgrid.me"
-            }
-        ]
-    }
+  "navLinks": [
+    {
+      "label": "All.This",
+      "href": "https://suign.github.io/all.this/"
+  },
+  {
+    "label": "@Source",
+    "href": "https://suign.github.io/"
+},
+      {
+          "label": "Github",
+          "href": "https://github.com/suiGn/cleaker"
+      },
+      {
+          "label": "Cleaker.me",
+          "href": "https://cleaker.me"
+      },
+      {
+        "label": "What is all.this?",
+          "href": "https://www.neurons.me/this"
+      }
+  ]
+}
 }
 }
