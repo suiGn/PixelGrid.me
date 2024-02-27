@@ -1,21 +1,21 @@
 {
     "name": "this.pixelgrid",
-    "version": "3.4.4",
+    "version": "3.4.5",
     "description": "PixelGrid is a screen. PixelGrid web component for vectorized pixel manipulation.",
     "main": "index.js",
     "scripts": {
-    "test": "test"
+        "test": "test"
     },
     "keywords": [
-    "image",
-    "input",
-    "web component",
-    "canvas",
-    "pixel grid"
+        "image",
+        "input",
+        "web component",
+        "canvas",
+        "pixel grid"
     ],
     "repository": {
-    "type": "git",
-    "url": "https://github.com/suiGn/PixelGrid"
+        "type": "git",
+        "url": "https://github.com/suiGn/PixelGrid"
     },
     "homepage": "https://www.npmjs.com/package/this.pixelgrid",
     "docs": "https://suiGn.github.io/PixelGrid",
@@ -23,4 +23,4 @@
     "license": "MIT",
     "repoType": "NPM Package",
     "category": "dataformatter"
-    }
+}
