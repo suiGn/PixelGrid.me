@@ -1,6 +1,6 @@
 {
     "name": "this.pixelgrid",
-    "version": "3.4.9",
+    "version": "3.4.91",
     "description": "PixelGrid is a screen. PixelGrid web component for vectorized pixel manipulation.",
     "main": "index.js",
     "scripts": {

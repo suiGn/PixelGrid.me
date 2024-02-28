@@ -1,115 +1,59 @@
-<img src="https://suign.github.io/PixelGrid/8-bit_pixel_art_icon_for_a_web_application_named_pixelgrid.me._The_icon_a_cube_representing_an_RGB_image_that_is_pixel.png" alt="SVG Image" width="203">
+<img src="https://suign.github.io/PixelGrid/8-bit_pixel_art_icon_for_a_web_application_named_pixelgrid.me._The_icon_a_cube_representing_an_RGB_image_that_is_pixel.png" alt="SVG Image" width="377">
 
 # PixelGrid
-PixelGrid is a versatile web tool offering insights into any content rendered on the HTML canvas. Through its custom-built `pixel-grid` HTML element, users can observe and extract individual pixel data, including RGB values.
 
-## **Key Features:**
+Welcome to `this.pixelgrid`, a pivotal utility within the [all.this](https://neurons.me/all-this) ecosystem, tailored to streamline the handling of visual data for machine learning and data analysis.
 
-- **Canvas Compatibility**: Supports all types of content, from videos to sketches.
-- **Pixel Insights**: Real-time monitoring and extraction of RGB values.
-- **Data Conversion**: Transition between 2D arrays and 3D matrices.
-- **Extensible**: Integration-ready for larger web projects or standalone use.
+## Overview
 
-Overall, this class provides the core functionalities needed for a grid of pixels, with methods to access, modify, and visualize pixel data.
+`this.pixelgrid` is a specialized module within the [ALL.THIS](https://neurons.me/all-this) framework, designed to capture and manipulate images within a predefined grid structure. This module plays a vital role in ensuring that image data is standardized, a key requirement for consistent and effective machine learning model training.
 
 ## Installation
+
+To incorporate `this.pixelgrid` into your project, install it via npm:
+
 ```bash
-npm i this.pixelgrid
+npm install this.pixelgrid
 ```
 
-### Introduction
+## Key Features
 
-PixelGrid provides an interface for HTML5 canvas pixel manipulation. It can function as a standalone module in a Node.js environment, as a web component in HTML files, or in a headless environment.
+- **Fixed-Dimension Grids:** `this.pixelgrid` offers functionality to define grids of specific dimensions, ensuring uniformity across all processed images.
+- **Image Capture & Loading:** Facilitates capturing images within the grid's boundaries and loading existing images into the grid for processing.
+- **ECMAScript Module:** Designed as an ECMAScript module, `this.pixelgrid` integrates smoothly with modern JavaScript projects, ensuring easy import and export of its functionalities.
 
-**Responsibility:** Display pixels and provide basic interactions with them.
-It's a visual component that could be utilized by other modules or functionalities.
-High-level operations on pixels, source management (like webcam feed), processing, transformations, and other functionalities.
-Utilizes the PixelGrid for visual representation and feedback but is not limited by it.
+## Usage
 
-PixelGrid defaults to if no width and heights specified.
+Here's a basic example to get you started with `this.pixelgrid`:
 
 ```js
-this.width = this.getAttribute('width') || 300;
-this.height = this.getAttribute('height') || 150;
+import pixelgrid from 'this.pixelgrid';
+
+// Create a new PixelGrid instance
+let myGrid = new pixelgrid.PixelGrid(640, 480);
+
+// Load or capture an image (demonstration purposes)
+myGrid.loadImage([...]);
+myGrid.captureImage();
 ```
 
-#### **How to use:**
-- Direct Web Component:
+## Integration with Neurons.me
 
-  ```html
-  <script src="./PixelGrid.js" defer></script>
-  <pixel-grid id="pg" width="640" height="480"></pixel-grid>
-  ```
+`this.pixelgrid` is designed to work seamlessly with the neurons.me ecosystem, enhancing its utility in the realm of machine learning:
 
-- With `this.pixel` for extended functionality:
+- **Data Standardization:** Ensures that image data is in a consistent format, ready for processing by machine learning models.
+- **Synergy with i.mlearning:** Integrates with i.mlearning for advanced data preparation and labeling, further facilitating the training of neural networks.
 
-  ```javascript
-  npm install this.pixel
-  const PixelGrid = require('this.pixel');
-  ```
+## Development Status
 
-Use the attribute in your HTML:
-If you want the canvas to be optimized for frequent reads:
+`this.pixelgrid` is currently under active development. We encourage users to check back regularly for updates and to explore the stable versions marked with git tags in our repository.
 
-```html
-<pixel-grid will-read-frequently="true"></pixel-grid>
-```
+## Documentation & Resources
 
-If you don't want to optimize for frequent reads:
+- **Documentation:** For detailed information and API references, visit our [documentation](https://suign.github.io/PixelGrid/).
+- **Website:** Learn more about `this.pixelgrid` at [pixelgrid.me](http://pixelgrid.me/) and explore the broader neurons.me ecosystem at [neurons.me](http://neurons.me/).
 
-```html
-<pixel-grid></pixel-grid>
-```
-
-Or:
-
-```html
-<pixel-grid will-read-frequently="false"></pixel-grid>
-```
-
-
-
-## Standardizing Web Elements for Machine Learning
-
-The **this.** modules aim to transform traditional web elements into standardized formats ready for machine learning.
-
-### Principles Behind the this. Library:
-
-- **Abstraction for ML**: Structure web content for machine learning.
-- **Web Standards**: Relies on familiar public web standards.
-- **Open and Collaborative**: Leveraging public standards for community collaboration.
-
-[More about neurons.me](https://www.neurons.me/)
-
-## THIS Sandbox DEMO Playground
-
-Explore the combined power of THIS.ME and NEURONS.ME.
-
-### Getting Started:
-
-1. **Clone the Repository**:
-
-   ```bash
-   git clone https://github.com/suiGn/.me.git
-   ```
-
-2. **Navigate**:
-
-   ```bash
-   cd .me
-   ```
-
-3. **Install Dependencies**:
-
-   ```bash
-   yarn install  # or npm install
-   ```
-
-4. **Launch**:
-
-   ```bash
-   npx electron index.js
-   ```
+We're excited to see how `this.pixelgrid` will empower your projects with standardized, machine-learning-ready image data. Stay tuned for more updates and features!
 
 ## License & Policies
 
