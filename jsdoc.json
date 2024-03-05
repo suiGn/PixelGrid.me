@@ -19,7 +19,7 @@
         }
     },
     "better-docs": {
-        "name": "This.PixelGrid",
+        "name": "PixelGrid.me",
         "title": "Docs for PixelGrid", 
         "css": "style.css",
         "trackingCode": "-",
@@ -43,7 +43,7 @@
       },
       {
         "label": "What is all.this?",
-          "href": "https://www.neurons.me/this"
+          "href": "https://www.neurons.me/all-this"
       }
   ]
 }
