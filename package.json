@@ -4,6 +4,7 @@
     "description": "PixelGrid is a screen. PixelGrid web component for vectorized pixel manipulation.",
     "main": "index.js",
     "scripts": {
+        "start": "node index.js",
         "test": "test"
     },
     "keywords": [
@@ -15,9 +16,9 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/suiGn/PixelGrid"
+        "url": "https://github.com/suiGn/PixelGrid.me"
     },
-    "homepage": "https://www.npmjs.com/package/this.pixelgrid",
+    "homepage": "https://pixelgrid.me",
     "docs": "https://suiGn.github.io/PixelGrid",
     "author": "suiGn",
     "license": "MIT",

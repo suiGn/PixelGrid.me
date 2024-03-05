@@ -1,4 +1,4 @@
-<img src="https://suign.github.io/PixelGrid/8-bit_pixel_art_icon_for_a_web_application_named_pixelgrid.me._The_icon_a_cube_representing_an_RGB_image_that_is_pixel.png" alt="SVG Image" width="377">
+<img src="https://suign.github.io/PixelGrid.me/8-bit_pixel_art_icon_for_a_web_application_named_pixelgrid.me._The_icon_a_cube_representing_an_RGB_image_that_is_pixel.png" alt="SVG Image" width="377">
 
 # PixelGrid
 
