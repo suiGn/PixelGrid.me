@@ -7,7 +7,7 @@
   -
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Docs for PixelGrid index.js</title>
+  <title>Docs for PixelGrid PixelGrid.js</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -113,7 +113,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Modules</h3><ul><li><a href="module-pixelgrid.html">pixelgrid</a></li></ul><h3>Classes</h3><ul><li><a href="PixelGrid.html">PixelGrid</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Classes</h3><ul><li><a href="PixelGrid.html">PixelGrid</a></li></ul></div>
                 
             </nav>
         </div>
@@ -121,7 +121,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Source</p>
-                    <h1>index.js</h1>
+                    <h1>PixelGrid.js</h1>
                 </header>
                 
 
@@ -130,33 +130,45 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/* In this.pixelgrid/index.js
-
-██████  ██ ██   ██ ███████ ██       ██████  ██████  ██ ██████     ███    ███ ███████ 
-██   ██ ██  ██ ██  ██      ██      ██       ██   ██ ██ ██   ██    ████  ████ ██      
-██████  ██   ███   █████   ██      ██   ███ ██████  ██ ██   ██    ██ ████ ██ █████   
-██      ██  ██ ██  ██      ██      ██    ██ ██   ██ ██ ██   ██    ██  ██  ██ ██      
-██      ██ ██   ██ ███████ ███████  ██████  ██   ██ ██ ██████  ██ ██      ██ ███████                                                                                                                                                                     
+            <pre class="prettyprint source linenums"><code>/* In ./src/PixelGrid.js
 ⓝⓔⓤⓡⓞⓝⓢ.ⓜⓔ
 🆂🆄🅸🅶🅽 */
 /**
- * @module pixelgrid
- * @description Exports the main functionalities of the this.pixelgrid library.
+ * Class representing a pixel grid.
+ * @description Provides a grid to capture or load images within its defined boundaries.
  */
+class PixelGrid {
+    /**
+     * Create a PixelGrid.
+     * @param {number} width - The width of the grid.
+     * @param {number} height - The height of the grid.
+     */
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+        // Initialize a grid; for now, we'll just keep it simple.
+        this.grid = Array.from({ length: height }, () => new Array(width).fill(null));
+    }
 
-import PixelGridClass from './src/PixelGrid.js';
+    /**
+     * Loads an image into the grid.
+     * @param {Array} image - The image to be loaded into the grid.
+     */
+    loadImage(image) {
+        // For now, we'll just simulate loading an image.
+        console.log("Loading an image into the grid...");
+    }
 
-/**
- * The main export object of this.pixelgrid package.
- * @type {Object}
- */
-const PixelGrid = {
-  PixelGridclass
-};
+    /**
+     * Captures an image within the grid boundaries.
+     */
+    captureImage() {
+        // For now, we'll just simulate capturing an image.
+        console.log("Capturing an image within the grid boundaries...");
+    }
+}
 
 export default PixelGrid;
-
-console.log("PixelGrid loaded;");
 </code></pre>
         </article>
     </section>

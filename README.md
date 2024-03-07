@@ -2,6 +2,16 @@
 
 # PixelGrid
 
+-----------
+
+### [Project Status : Experimental and Under Development, Subject to Major Changes]
+
+The module is in active development, and as such, it is subject to significant changes as we refine our approach and methodologies to best support our goals.
+
+visit: https://neurons.me to learn more.
+
+----------
+
 Welcome to `this.pixelgrid`, a pivotal utility within the [all.this](https://neurons.me/all-this) ecosystem, tailored to streamline the handling of visual data for machine learning and data analysis.
 
 ## Overview
@@ -39,7 +49,7 @@ myGrid.captureImage();
 
 ## Integration with Neurons.me
 
-`this.pixelgrid` is designed to work seamlessly with the neurons.me ecosystem, enhancing its utility in the realm of machine learning:
+`this.pixelgrid` is designed to work seamlessly with the **neurons.me and all.this ecosystem**, enhancing its utility in the realm of machine learning:
 
 - **Data Standardization:** Ensures that image data is in a consistent format, ready for processing by machine learning models.
 - **Synergy with i.mlearning:** Integrates with i.mlearning for advanced data preparation and labeling, further facilitating the training of neural networks.
@@ -55,8 +65,38 @@ myGrid.captureImage();
 
 We're excited to see how `this.pixelgrid` will empower your projects with standardized, machine-learning-ready image data. Stay tuned for more updates and features!
 
+----------
+
+# About All.This
+
+## Modular Data Structures:
+
+**[this.me](https://suign.github.io/this.me)  - [this.audio](https://suign.github.io/this.audio) - [this.text](https://suign.github.io/this.text) - [this.wallet](https://suign.github.io/this.wallet) - [this.img](https://suign.github.io/this.img) - [this.pixel](https://suign.github.io/Pixels) - [be.this](https://suign.github.io/be.this) - [this.DOM](https://suign.github.io/this.DOM) - [this.env](https://suign.github.io/this.env/) - [this.GUI](https://suign.github.io/this.GUI) - [this.be](https://suign.github.io/this.be) - [this.video](https://suign.github.io/this.video) - [this.atom](https://suign.github.io/this.atom) - [this.dictionaries](https://suign.github.io/this.dictionaries/)**
+
+**Each module** in **[all.this](https://neurons.me/all-this)** represents a specific **datastructure**. These classes encapsulate the functionalities and **data specific to their domain.**
+
+## **Utils**
+
+**[all.this](https://neurons.me/all-this)** not only aggregates these modules but also provides utilities to facilitate the integration, management, and enhancement of these data structures. **For example:**
+
+*The integration with [cleaker](https://suign.github.io/cleaker/) ensures each module instance has a **unique cryptographic identity**, enhancing security and data integrity.*
+
+### Neurons.me Ecosystem Glossary:
+
+visit: [Neurons.me Glossary](https://suign.github.io/neurons.me/Glossary) 
+
 ## License & Policies
 
 - **License**: MIT License (see LICENSE for details).
+
 - **Privacy Policy**: Respects user privacy; no collection/storage of personal data.
+
 - **Terms of Usage**: Use responsibly. No guarantees/warranties provided. [Terms](https://www.neurons.me/terms-of-use) | [Privacy](https://www.neurons.me/privacy-policy)
+
+  **Learn more** at https://neurons.me
+
+  **Author:** SuiGn
+
+  [By neurons.me](https://neurons.me)
+
+  <img src="https://suign.github.io/neurons.me/neurons_logo.png" alt="neurons.me logo" width="123" height="123" style="width123px; height:123px;">

@@ -1,6 +1,6 @@
 {
     "name": "pixelgrid.me",
-    "version": "0.0.91",
+    "version": "0.0.92",
     "description": "PixelGrid is a screen. PixelGrid web component for vectorized pixel manipulation.",
     "main": "index.js",
     "scripts": {
@@ -19,7 +19,7 @@
         "url": "https://github.com/suiGn/PixelGrid.me"
     },
     "homepage": "https://pixelgrid.me",
-    "docs": "https://suiGn.github.io/PixelGrid",
+    "docs": "https://suiGn.github.io/PixelGrid.me",
     "author": "suiGn",
     "license": "MIT",
     "type": "module",
