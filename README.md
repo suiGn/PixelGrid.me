@@ -1,39 +1,29 @@
 <img src="https://suign.github.io/PixelGrid.me/8-bit_pixel_art_icon_for_a_web_application_named_pixelgrid.me._The_icon_a_cube_representing_an_RGB_image_that_is_pixel.png" alt="pixelgrid.me" width="377">
 
 # PixelGrid
-
 -----------
-
 ### [Project Status : Experimental and Under Development, Subject to Major Changes]
-
 The module is in active development, and as such, it is subject to significant changes as we refine our approach and methodologies to best support our goals.
-
 visit: https://neurons.me to learn more.
-
 ----------
 
 Welcome to `this.pixelgrid`, a pivotal utility within the [all.this](https://neurons.me/all-this) ecosystem, tailored to streamline the handling of visual data for machine learning and data analysis.
 
 ## Overview
-
 `this.pixelgrid` is a specialized module within the [ALL.THIS](https://neurons.me/all-this) framework, designed to capture and manipulate images within a predefined grid structure. This module plays a vital role in ensuring that image data is standardized, a key requirement for consistent and effective machine learning model training.
 
 ## Installation
-
 To incorporate `this.pixelgrid` into your project, install it via npm:
-
 ```bash
 npm install this.pixelgrid
 ```
 
 ## Key Features
-
 - **Fixed-Dimension Grids:** `this.pixelgrid` offers functionality to define grids of specific dimensions, ensuring uniformity across all processed images.
 - **Image Capture & Loading:** Facilitates capturing images within the grid's boundaries and loading existing images into the grid for processing.
 - **ECMAScript Module:** Designed as an ECMAScript module, `this.pixelgrid` integrates smoothly with modern JavaScript projects, ensuring easy import and export of its functionalities.
 
 ## Usage
-
 Here's a basic example to get you started with `this.pixelgrid`:
 
 ```js
